@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan Markup</title>
+
+   
+    <link rel="stylesheet" href="style.css"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body>
+
+<div id="wrapper">
+
+    <div id="header">
+      
+
+        <ul id="menu-utama">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Komponen</a></li>
+            <li><a href="#">Tutorial</a></li>
+        </ul>
+
+        <form>
+            <input type="text" placeholder="Search..." />
+        </form>
+    </div>
+
+ 
+    <div class="slider">
+        <div><img src="BASE DE DATOS.jpg"></div>
+        <div><img src="Gaming Setup - All Black.jpg"></div>
+        <div><img src="circiuit.jpg"></div>
+    </div>
+
+    <div id="content">
+
+        <div id="daftar-artikel">
+
+            <div class="artikel">
+                <img src="cpu.jpg" />
+                <div>
+                    <h1>CPU (Processor)</h1>
+                    <b>Jan 12, 2021</b>
+                    <b>Views : 6,487,497</b>
+                    <p>CPU adalah otak komputer yang mengatur semua proses. Semakin tinggi performanya, semakin cepat komputer bekerja.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <div class="artikel">
+                <img src="ram.jpg" />
+                <div>
+                    <h1>RAM (Random Acces Memory)</h1>
+                    <b>Feb 12, 2021</b>
+                    <b>Views : 7,487,497</b>
+                    <p>RAM menyimpan data sementara agar aplikasi berjalan lebih cepat dan lancar.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+             <div class="artikel">
+                <img src="vga.jpg" alt="Gambar Artikel" />
+                <div>
+                    <h1>GPU</h1>
+                    <b>Jun 12, 2021</b>
+                    <b>Views : 4,487,497</b>
+                    <p>GPU berfungsi untuk mengolah grafis, penting untuk gaming, desain, dan editing video.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="sidebar">
+            <h2>Who we are?</h2>
+            <p>Website ini membahas komponen PC dan membantu kamu memahami hardware komputer dengan mudah.</p>
+        
+        <h2>Artikel berdasarkan kategori</h2> 
+             <ul> 
+                <li><a href= >Processor</a></li> 
+                <li><a href= >Gpu</a></li> 
+                <li><a href= >RAM</a></li>
+                <li><a href= >Motherboard</a></li>
+                <li><a href= >Power supply</a></li> 
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Copyright 2026 by Fabian</p>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('.slider').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    arrows: true
+  });
+});
+</script>
+
+</body>
+</html>
